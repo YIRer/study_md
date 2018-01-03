@@ -92,6 +92,10 @@
 <pre>
     <code>
         {
+            test: /\.css$/
+            ...
+        },
+        {
             test: /\.scss$/,
             loader: ExtractTextPlugin.extract(
               Object.assign(
