@@ -1,16 +1,28 @@
 # create-react-app을 이용한 react 기본환경설정
 >## 목차
-* 기본 환경 설치
-* scss 설정 하기
-    * webpack 설정을 위한 패키지 해제
-    * scss 사용을 위한 sass-loader, node-sass 설치
-    * webpack 설정 변경하기
-    * 전역적으로 사용되는 scss 패스 설정
-* 의존성 모듈 업데이트
-* 레퍼런스
+<!-- TOC -->
+
+- [create-react-app을 이용한 react 기본환경설정](#create-react-app을-이용한-react-기본환경설정)
+    - [기본 환경 설치](#기본-환경-설치)
+        - [create-react-app을 글로벌로 설치](#create-react-app을-글로벌로-설치)
+        - [프로젝트 생성](#프로젝트-생성)
+        - [설치 후 개발서버 열기(http://localhost:3000)](#설치-후-개발서버-열기httplocalhost3000)
+    - [scss 설정하기](#scss-설정하기)
+        - [webpack 설정을 위한 패키지 해제](#webpack-설정을-위한-패키지-해제)
+        - [scss 사용을 위한 sass-loader, node-sass 설치](#scss-사용을-위한-sass-loader-node-sass-설치)
+        - [webpack 설정 변경하기(./config/webpack.config.dev.js)](#webpack-설정-변경하기configwebpackconfigdevjs)
+        - [webpack 설정 변경하기(./config/webpack.config.prod.js)](#webpack-설정-변경하기configwebpackconfigprodjs)
+        - [전역적으로 사용되는 scss 패스 설정(./config/path.js)](#전역적으로-사용되는-scss-패스-설정configpathjs)
+        - [전역적으로 사용되는 scss 패스 설정(./config/webpack.config.dev.js),(./config/webpack.config.prod.js)](#전역적으로-사용되는-scss-패스-설정configwebpackconfigdevjsconfigwebpackconfigprodjs)
+    - [의존성 모듈 업데이트](#의존성-모듈-업데이트)
+        - [npm-check-updates를 글로벌로 설치 후 패키지 폴더로 이동 후 업데이트](#npm-check-updates를-글로벌로-설치-후-패키지-폴더로-이동-후-업데이트)
+        - [패키지 폴더로 이동 후 업데이트](#패키지-폴더로-이동-후-업데이트)
+    - [레퍼런스](#레퍼런스)
+
+<!-- /TOC -->
 
 ----
->## 기본 환경 설치
+## 기본 환경 설치
 
 ### create-react-app을 글로벌로 설치
 
@@ -25,7 +37,7 @@
       npm start
 
 ---
->## scss 설정하기
+## scss 설정하기
 
 ### webpack 설정을 위한 패키지 해제
     npm run eject
@@ -148,7 +160,7 @@
         }
     }
 ---
->## 의존성 모듈 업데이트
+## 의존성 모듈 업데이트
 <p>의존성 모듈의 업데이트를 처리해주는 npm-check-update 설치</p>
 
 ### npm-check-updates를 글로벌로 설치 후 패키지 폴더로 이동 후 업데이트
@@ -163,7 +175,7 @@
     npm outdated //npm outdated 실행 후 결과 값이 없으면 성공적으로 마무리 된 것임
 
 ---
->## 레퍼런스
+## 레퍼런스
 
 [create-react-app](https://github.com/facebookincubator/create-react-app)
 
